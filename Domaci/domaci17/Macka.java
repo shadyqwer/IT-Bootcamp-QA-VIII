@@ -9,7 +9,7 @@ public class Macka extends Zivotinja {
 
     public Macka(String ime, String nadimak, double tezina) {
         super(ime, nadimak);
-        this.tezina = tezina;
+        setTezina(tezina);
     }
 
     public double getTezina() {
@@ -17,7 +17,11 @@ public class Macka extends Zivotinja {
     }
 
     public void setTezina(double tezina) {
-        this.tezina = tezina;
+        if (tezina <= 0) {
+            this.tezina = tezina;
+        } else {
+            System.out.println("Tezina ne moze biti 0 ili negativna.");
+        }
     }
 
     public String isChunk() {
