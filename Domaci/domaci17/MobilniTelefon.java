@@ -14,6 +14,22 @@ public class MobilniTelefon extends Racunar {
         this.mreza = mreza;
     }
 
+    public int getMegapikseli() {
+        return megapikseli;
+    }
+
+    public void setMegapikseli(int megapikseli) {
+        this.megapikseli = megapikseli;
+    }
+
+    public Mreza getMreza() {
+        return mreza;
+    }
+
+    public void setMreza(Mreza mreza) {
+        this.mreza = mreza;
+    }
+
     @Override
     public String toString() {
         return super.toString() + ", kamera: " + megapikseli + "Megapixela, mreza: " + mreza.getMreza();
