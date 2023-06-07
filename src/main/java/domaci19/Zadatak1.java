@@ -2,6 +2,7 @@ package domaci19;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -37,6 +38,10 @@ public class Zadatak1 {
         fieldEmail.sendKeys(email);
         fieldCurrentAddress.sendKeys(currentAddress);
         fieldPermanentAddress.sendKeys(permanentAddress);
+
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
+        executor.executeScript("arguments[0].scrollIntoView(true);", submitButton);
+
         submitButton.click();
 
         // find submitted strings
