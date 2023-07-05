@@ -1,4 +1,4 @@
-# IT Bootcamp Software Testing (manual and autmation) homeworks
+# IT Bootcamp Software Testing (manual and automation)
  This repository contains the homework assignments and assessments completed during the course.  
  Including:
  - Manual Testing
